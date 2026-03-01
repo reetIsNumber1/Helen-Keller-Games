@@ -1,20 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Helen Keller Games - Welcome to my interactive games!</title>
+  <!-- Basic page setup: character encoding, responsive viewport, title, and shared fonts/styles. -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Helen Keller Games - Welcome to games made in less than 5 hours!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-    <h1>Welcome to Helen Keller Games!</h1>
-    <p>Discover a world of fun and learning with our interactive games designed for all ages. Whether you're looking to improve your skills, challenge your mind, or just have some fun, we have something for everyone.</p>
-    <ul>
-        <li><a href="game1.html">Game 1: Game1</a></li> 
-   <!--Note: The game names "Game1", "Game2", "Game3", and "Game4" are placeholders. You can replace them with the actual names of the games you have created.-->
-        <li><a href="game2.html">Game 2: game 2</a></li>
-        <li><a href="game3.html">Game 3: game3</a></li>
-        <li><a href="game4.html">Game 4: game4</a></li>
-    </ul>
-    <p>Join us on this exciting journey and let's play together!</p>
+<body class="home-page">
+  <!-- Header: sticky top navigation used to move between Home and each game page. -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">Helen Keller Games</a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="game1.html">Game 1</a></li>
+          <li><a href="game2.html">Game 2</a></li>
+          <li><a href="game3.html">Game 3</a></li>
+          <li><a href="game4.html">Game 4</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero: intro text for the homepage (kicker, main heading, and supporting paragraph). -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <p class="kicker">Welcome to games made in less than 5 hours!</p>
+        <!--Top text -->
+        <h1>Hellen Keller Games</h1>
+        <p class="lead">Don't ask how we got the name, I don't know either or what I'm doing. Youtube tutorial go brrrrrrr</p>
+        <!--Bottom text -->
+      </div>
+    </section>
+
+    <!-- Game grid: cards for each game with status, summary, and a link to that game's page. -->
+    <section class="container game-grid" aria-label="Game list">
+      <article class="game-card">
+        <p class="chip">In Progress</p>
+        <h2>Game 1: Sound Match</h2>
+        <p>Practice listening and matching by pairing similar sounds and tones.</p>
+        <a class="btn" href="game1.html">View Page</a>
+      </article>
+
+      <article class="game-card">
+        <p class="chip">In Progress</p>
+        <h2>Game 2: Word Builder</h2>
+        <p>Build words from letter sets to strengthen vocabulary and spelling.</p>
+        <a class="btn" href="game2.html">View Page</a>
+      </article>
+
+      <article class="game-card">
+        <p class="chip">In Progress</p>
+        <h2>Game 3: Pattern Path</h2>
+        <p>Follow shape and color patterns to improve logic and sequencing.</p>
+        <a class="btn" href="game3.html">View Page</a>
+      </article>
+
+      <article class="game-card">
+        <p class="chip">In Progress</p>
+        <h2>Game 4: Quick Recall</h2>
+        <p>Train short-term memory with timed rounds and increasing difficulty.</p>
+        <a class="btn" href="game4.html">View Page</a>
+      </article>
+    </section>
+  </main>
+
+  <!-- Footer: persistent site label and custom footer message. -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Helen Keller Games</p>
+      <p>Don't ask how we got the name, I don't know either or what I'm doing. Youtube tutorial go brrrrrrr</p>
+    </div>
+  </footer>
 </body>
 </html>
+
+
+
+
