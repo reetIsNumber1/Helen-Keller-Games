@@ -1,4 +1,4 @@
-/* Design tokens: site color palette and shared shadows. */
+/* Site color palette and shared shadows. Check colors later. */
 :root {
   --bg: #f4efe4;
   --ink: #20222a;
@@ -13,19 +13,19 @@
   --shadow-float: 0 20px 46px rgba(22, 28, 35, 0.18);
 }
 
-/* Global box model reset for predictable sizing. */
+/* Global sizing. */
 * {
   box-sizing: border-box;
 }
 
-/* Remove browser default margins/padding. */
+/* Remove browser default margins/padding. the original was not good looking. */
 html,
 body {
   margin: 0;
   padding: 0;
 }
 
-/* Base page styling: typography, background, and full-height layout. */
+/* The font and how they are implimented. */
 body {
   font-family: "Nunito", "Segoe UI", sans-serif;
   color: var(--ink);
@@ -43,13 +43,13 @@ main {
   flex: 1;
 }
 
-/* Shared width container used across pages. */
+/* Same width container used across pages. */
 .container {
   width: min(1120px, 92%);
   margin: 0 auto;
 }
 
-/* Sticky top header with translucent background and blur. */
+/* Sticky top header with translucent background and blur. I am very proud of this. */
 .site-header {
   position: sticky;
   top: 0;
@@ -78,7 +78,7 @@ main {
   line-height: 1;
 }
 
-/* Navigation list layout and spacing. */
+/* Navigation list layout and spacing. I think this is acurate, I don't know if this is standardized across screens. */
 .nav-list {
   list-style: none;
   margin: 0;
@@ -90,7 +90,7 @@ main {
   justify-content: flex-end;
 }
 
-/* Base nav link style and interaction transition. */
+/* Base nav link format and transition after touch */
 .nav-list a {
   display: inline-block;
   padding: 8px 12px;
@@ -103,7 +103,7 @@ main {
   transition: transform 160ms ease, background-color 160ms ease, color 160ms ease, border-color 160ms ease;
 }
 
-/* Hover treatment for nav links. */
+/* Hover reaction for nav links. I don't think this works. */
 .nav-list a:hover {
   transform: translateY(-1px);
   border-color: var(--line);
@@ -116,13 +116,13 @@ main {
   color: #fff;
 }
 
-/* Homepage hero spacing and entrance animation. */
+/* Homepage spacing */
 .hero {
   padding: clamp(48px, 8vw, 88px) 0 30px;
   animation: fade-rise 500ms ease-out;
 }
 
-/* Limits the hero text line length. */
+/* Limits the length of text on index. */
 .hero-inner {
   max-width: 760px;
 }
@@ -159,7 +159,7 @@ h1 {
   letter-spacing: 0.3px;
 }
 
-/* Secondary heading scale. */
+/* Secondary heading scale. Hopefully this doesn't overide everything. */
 h2 {
   font-size: clamp(1.3rem, 2.3vw, 1.8rem);
   margin-bottom: 8px;
@@ -340,3 +340,4 @@ p {
     align-items: flex-start;
   }
 }
+
